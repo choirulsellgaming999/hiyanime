@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Konten</title>
+    <link rel="stylesheet" href="https://choirulsellgaming999.github.io/hiyanime/css/video-player.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"> <!-- Google Font -->
+</head>
+<body>
+    <div class="content-wrapper">
+        <header>
+            <button class="back-button" onclick="goBack()">
+                <img src="https://i.postimg.cc/TPRVbTFk/Back-Button-PNG-Pic.png" alt="Kembali" style="width: 20px; height: 20px; vertical-align: middle;">
+                Kembali
+            </button>
+            <div class="logo">
+                <img src="https://i.postimg.cc/C1hcwGwx/1726984219508.png" alt="Moniosama Logo">
+            </div>
+        </header>
+        <main>
+            <div class="video-wrapper">
+                <video id="videoPlayer" controls controlsList="nodownload">
+                    <source src="https://files.catbox.moe/k654t1.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+
+                <div class="video-details">
+                    <ul>
+                        <li><strong>Tanggal Upload:</strong> 16 Oktober 2024</li>
+                        <li><strong>Judul Anime:</strong> Jujutsu Kaisen</li>
+                        <li><strong>Deskripsi:</strong> Animation - Streaming video terbaru hiyanime play. hiyanime menyediakan video tanpa iklan dan tentu saja gratis</li>
+                        <li><strong>Nama Pengunggah:</strong> Hiyanime</li>
+                    </ul>
+                </div>
+
+                <!-- Bagian Tombol Donate dan Dialog Donasi -->
+                <div class="donation-section">
+                    <!-- Tombol Donate -->
+                    <div style="text-align: center; margin-top: 20px;">
+                        <button class="donate-button" onclick="window.location.href='https://saweria.co/moniOsama'" style="padding: 10px 20px; background-color: #f39c12; color: white; border: none; border-radius: 5px; cursor: pointer;">
+                            Donate
+                        </button>
+                    </div>
+
+                    <!-- Dialog Permintaan Donasi -->
+                    <div class="donation-dialog" style="text-align: center; margin-top: 10px;">
+                        <p style="font-size: 16px; color: #333;">Jika kamu menikmati konten ini, pertimbangkan untuk memberikan donasi agar kami dapat terus menyediakan konten gratis. Terima kasih atas dukungannya!</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <footer>
+        <p>&copy; 2025-2026 Hiyanime. All rights reserved.</p>
+    </footer>
+    <script src="https://choirulsellgaming999.github.io/hiyanime/javascript/video-player.js"></script>
+</body>
+</html>
