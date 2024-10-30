@@ -156,8 +156,6 @@ const data = [
     },
 ];
 
-let searchHistory = JSON.parse(localStorage.getItem('searchHistory')) || [];
-
 function displayResults(results, query) {
     const resultsContainer = document.getElementById('searchResults');
     resultsContainer.innerHTML = ''; 
@@ -190,14 +188,12 @@ function handleSearch(event) {
     event.preventDefault();
     const query = document.getElementById('searchInput').value.toLowerCase().trim();
     
-    // Tambahkan pemeriksaan panjang query
-    if (query.length < 2) { // Jika panjang query kurang dari 4 karakter
+    if (query.length < 2) { 
         const resultsContainer = document.getElementById('searchResults');
         resultsContainer.innerHTML = ''; 
         return; 
     }
-
-    // Filter data untuk mencari item yang relevan
+    
     const results = data.filter(item => {
         const title = item.title.toLowerCase();
         const queryWords = query.split(' ');
